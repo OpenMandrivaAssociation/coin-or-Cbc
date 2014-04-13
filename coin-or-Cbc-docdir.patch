@@ -1,0 +1,21 @@
+diff -up Cbc-2.8.9/Makefile.in.orig Cbc-2.8.9/Makefile.in
+--- Cbc-2.8.9/Makefile.in.orig	2014-03-28 13:17:13.816118260 -0300
++++ Cbc-2.8.9/Makefile.in	2014-03-28 13:17:35.884119105 -0300
+@@ -478,7 +478,7 @@ EXTRA_DIST = doc/authors.xml doc/cbcexe.
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = cbc.pc osi-cbc.pc
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/Cbc
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -488,7 +488,7 @@ CLEANFILES =
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_3) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:
