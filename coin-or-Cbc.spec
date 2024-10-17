@@ -7,7 +7,7 @@ Summary:	Coin-or branch and cut
 Version:	2.8.9
 Release:	1%{?dist}
 License:	EPL
-URL:		http://projects.coin-or.org/%{module}
+URL:		https://projects.coin-or.org/%{module}
 Source0:	http://www.coin-or.org/download/pkgsource/%{module}/%{module}-%{version}.tgz
 Source1:	%{name}.rpmlintrc
 BuildRequires:	blas-devel
